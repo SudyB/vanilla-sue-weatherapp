@@ -15,9 +15,59 @@
   </head>
   <body>
     <div class="container">
-      <h1>Sues a bad bitch!</h1>
-      <a href="" class="btn btn-primary"> Click me! </a>
+      <form id="citySearch"></form>
+      <input type="text" id="citySearch-input" placeholder="Enter your city!">
+      <input type="submit" value="Search 🔍" id="searchButton">
+      </form>
+      <div class="currentLocation">
+      <p>
+        <a href="#">
+          "Current Location📍"
+        </a>
+      </p>
     </div>
+    <div class="main" id="mainInfo">
+    <h1 id="city"></h1>
+    <div class="row">
+      <div class="col-7">
+        <div class="CityInfo">
+          <h1 id="cityName">New York</h1>
+          <p id="todaysDate">N/A</p>
+          <p id="currentTime">N/A</p>
+          <br>
+          <div class="weatherSpecs">
+            <p>
+              Humidity: <span id="humidity">N/A</span><br />
+                  Precipitation: <span id="precip">N/A</span> <br />
+                  Wind:<span id="windSpeed">N/A</span> <br />
+            </p>
+          </div>
+        </div>
+        <div class="col-5"></div>
+        <div class="temp">
+          <h1>
+                <span id="currentTemp">N/A</span>
+                 <span class="degrees">
+                 </span><span id="celcius" class="active"><a href="#">°C</a></span>
+                  |
+                  <span id="fahrenheit" class ="inactive"><a href="#">°F</a></span>
+                  </span>
+              </h1>
+              <br />
+              <p class="weatherDescription">N/A</p>
+              <p class="highLow">H: N/A/L: N/A</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+    <footer>
+      <span id="gitHubLink"><a href="https://github.com/SudyB/vanilla-sue-weatherapp">Open-source code</a></span>
+      "by Sue Buchanan"
+    </footer>
     <script src="src/app.js"></script>
   </body>
 </html>
